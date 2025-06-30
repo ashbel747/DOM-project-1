@@ -30,4 +30,38 @@ btn.addEventListener('click', function(){
 
     quote.innerText = quotes[random].quote;
     person.innerText = quotes[random].person;
+}) 
+
+//Variables
+
+let openBtn = document.getElementById('open-btn');
+let modalContainer = document.getElementById('modal-container');
+let closeBtn = document.getElementById('close-btn');
+
+openBtn.addEventListener('click', function(){
+    modalContainer.style.display = 'block';
+});
+
+closeBtn.addEventListener('click', function(){
+    modalContainer.style.display = 'none'
+});
+
+window.addEventListener('click', function(e){
+
+    if (e.target === modalContainer){
+        modalContainer.style.display = 'none';
+    }
 })
+
+
+// Variables
+
+const accordion = document.getElementsByClassName('content-container');
+
+for(i = 0; i < accordion.length; i++) {
+    accordion[i].addEventListener('click', function(){
+        this.classList.toggle('active');
+    })
+}
+
+

@@ -12,25 +12,76 @@
     <title>DOM Manipulation</title>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h2>JavaScript Quote Generator</h2>
-        </div>
+    <main>
+        <section>
+            <button id="open-btn">
+                <p>Where's our model?</p>
+            </button>
 
-        <div class="main-content">
-            <div class="text-area">
-                <span class="quote">
-                    "I do the very best I know how - the very best I can; and I mean to keep on doing so until the end."
-                </span>
+            <div id="modal-container">
+                <div id="modal">
+                    <p>Here I am!</p>
+                    <div id="close-btn">&times;</div>
+                </div>
             </div>
-            <div class="person">
-                Abraham Lincoln
-            </div>
+        </section>
 
-            <div class="button-area">
-                <button id="new-quote">New Quote</button>
+        <section>
+            <div class="container">
+                <div class="header">
+                    <h2>JavaScript Quote Generator</h2>
+                </div>
+
+                <div class="main-content">
+                    <div class="text-area">
+                        <span class="quote">
+                            "I do the very best I know how - the very best I can; and I mean to keep on doing so until the end."
+                        </span>
+                    </div>
+                    <div class="person">
+                        Abraham Lincoln
+                    </div>
+
+                    <div class="button-area">
+                        <button id="new-quote">New Quote</button>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
+        </section>
+
+        <section>
+            <div class="accordion">
+                <h2 class="accordian-title">
+                    Frequently Asked Questions
+                </h2>
+                <div class="content-container">
+                    <div class="question">
+                        What is the return policy?
+                    </div>
+                    <div class="answer">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eum quaerat, vitae illo commodi est in vel ut consequatur quis debitis eaque ab et deleniti aut quo voluptatibus error illum?
+                    </div>
+                </div>
+
+                <div class="content-container">
+                    <div class="question">
+                        What is the return policy?
+                    </div>
+                    <div class="answer">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eum quaerat, vitae illo commodi est in vel ut consequatur quis debitis eaque ab et deleniti aut quo voluptatibus error illum?
+                    </div>
+                </div>
+
+                <div class="content-container">
+                    <div class="question">
+                        What is the return policy?
+                    </div>
+                    <div class="answer">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eum quaerat, vitae illo commodi est in vel ut consequatur quis debitis eaque ab et deleniti aut quo voluptatibus error illum?
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main> 
 </body>
 </html>
